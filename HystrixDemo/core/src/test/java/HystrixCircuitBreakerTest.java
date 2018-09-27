@@ -12,6 +12,10 @@ public class HystrixCircuitBreakerTest {
 
     @Test
     public void testHystrixCircuitBreaker(){
+
+        ///https://github.com/Netflix/Hystrix/wiki/How-it-Works#flow2
+
+
         PositiveCommand testCommand = new PositiveCommand("World");
         assertEquals("Hello World", testCommand.execute());
 
